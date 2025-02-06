@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 33);
+    color:white;
+    font-family: "Open Sans", serif;
+}
+
+nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 55px;
+   background-color: rgb(18, 18, 62);
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    margin: 0 23px;
+    font-size: 0.8rem;
+}
+li a{
+  text-decoration: none;
+  color: white;
+}
+li a:hover{
+   color: aqua;
+   font-size: 0.85rem;
+  }
+.left{
+    font-size: 1.4rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 38px 0;
+}
+/* .firstSection div{
+  background-color: red;
+  width: 30%;
+} */
+
+.fromleft{
+    /* background-color: red; */
+  width: 40%;
+  font-size: 2.8rem;
+  margin: 200px 0px 0px 120px;
+}
+
+.fromright {
+        padding-right: 2.5px;
+}
+.fromright img {
+    width: 30vw; /* Adjust as needed */
+    height: 30vw; /* Must be equal to width for a circle */
+    border-radius: 100%;
+    /* object-fit: cover;  */
+    /* display: block; */
+    /* margin: 100px;  */
+    padding: 99px ;
+    /* position: relative; */
+    background-color: rgb(0, 0, 33);
+  }
+
+.name{
+    color: rgb(9, 189, 138);
+}
+
+ /* .Secondsection{
+    max-width: 800vw;
+    margin: 200px 0px 0px 1200px; */
+    /* margin: auto;
+     padding-left:500px;
+    margin: 100px 200px 300px 400px; */
+/* }   */ 
+
+main hr{
+    border:0;
+    background: rgb(67, 67, 212);
+    height:1.2px;
+    margin: 40px 80px;
+}
+.another{
+    max-width: 80vw;
+    margin-left: 670px;
+}
+
+/* .Secondsection div h1{
+     font-size: 200rem;
+} */
+
+.another h1{
+    font-size: 2.6rem;
+    margin-left: 170px;
+}
+
+
+.secondanother p{
+    margin-left: -470px;
+    margin-right: 188px;
+    font-size: 1.3rem;
+}
