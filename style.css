@@ -14,7 +14,7 @@ nav{
    justify-content: space-around;
    align-items: center;
    height: 55px;
-   background-color: rgb(18, 18, 62);
+   /* background-color: rgb(18, 18, 62); */
 }
 ul{
     display: flex;
@@ -31,20 +31,56 @@ li a{
 }
 li a:hover{
    color: aqua;
-   font-size: 0.85rem;
+   font-size: 0.86rem;
   }
 .left{
     font-size: 1.4rem;
+    color:rgb(214, 192, 255) ;
 }
+
+
 .firstSection{
     display: flex;
     justify-content: space-around;
     margin: 38px 0;
 }
-/* .firstSection div{
-  background-color: red;
-  width: 30%;
-} */
+
+.name {
+    color: aqua;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 50px;
+    animation: fadeBounce 2s ease-in-out, colorChange 3s infinite alternate;
+}
+
+/* Smooth Fade-in and Bounce */
+@keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth Color Transition */
+@keyframes colorChange {
+    0% {
+        color: aqua;
+    }
+    100% {
+        color: cyan;
+        text-shadow: 0 0 9px cyan, 0 0 20px lightblue;
+    }
+}
+
+
 
 .fromleft{
     /* background-color: red; */
@@ -56,29 +92,85 @@ li a:hover{
 .fromright {
         padding-right: 2.5px;
 }
-.fromright img {
+
+/* This code use without any effect on image 
+/* .fromright img {
     width: 30vw; /* Adjust as needed */
-    height: 30vw; /* Must be equal to width for a circle */
-    border-radius: 100%;
+    /* height: 30vw;       Must be equal to width for a circle */
+    /* border-radius: 100%; */
     /* object-fit: cover;  */
     /* display: block; */
     /* margin: 100px;  */
-    padding: 99px ;
+    
+    /* padding: 99px ; */
     /* position: relative; */
-    background-color: rgb(0, 0, 33);
-  }
+    /* background-color: rgb(0, 0, 33); */
+  /* } */
 
-.name{
-    color: rgb(9, 189, 138);
+  .fromright img {
+    position: relative;
+    top: 60px;
+    width: 30vw; /* Adjust as needed */
+    height: 30vw;
+    margin-top: 5px; /* Must be equal to width for a perfect circle */
+    border-radius: 50%; /* Ensures the image remains a circle */
+    object-fit: cover; /* Prevents distortion */
+    padding: 10px; /* Reduce padding to keep the circle tight */
+    background-color: rgb(0, 0, 33); /* Dark background to highlight the image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    transition: all 0.5s ease-in-out; /* Smooth hover effect */
+    animation: slideInFromRight 1.5s ease-out, float 3s ease-in-out infinite; /* Entrance and floating animation */
 }
 
- /* .Secondsection{
-    max-width: 800vw;
-    margin: 200px 0px 0px 1200px; */
-    /* margin: auto;
-     padding-left:500px;
-    margin: 100px 200px 300px 400px; */
-/* }   */ 
+/* Slide-in animation from the right */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%); /* Starts off-screen to the right */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Moves to its original position */
+        opacity: 1;
+    }
+}
+
+/* Floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px); /* Moves up */
+    }
+    100% {
+        transform: translateY(0); /* Returns to original position */
+    }
+}
+
+/* Hover effect - No rotation, only scaling & glowing */
+.fromright img:hover {
+    transform: scale(1.1); /* Slightly enlarges */
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8); /* Strong glow effect */
+    border: 4px solid #ff6f61; /* Adds a colorful border */
+    animation: glow 2s infinite; /* Keeps the glowing effect */
+}
+
+/* Perfect glowing border animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61;
+    }
+    50% {
+        box-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    }
+    100% {
+        box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61;
+    }
+}
+
+
+
+  
 
 main hr{
     border:0;
@@ -98,11 +190,133 @@ main hr{
 .another h1{
     font-size: 2.6rem;
     margin-left: 170px;
+    margin-top: 250px ;
 }
 
 
-.secondanother p{
+.secondanother p {
+    width: 155px;
     margin-left: -470px;
     margin-right: 188px;
     font-size: 1.3rem;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    
+    /* Add a smooth transition for hover effects */
+    transition: all 0.5s ease-in-out;
+}
+
+/* Add a hover effect */
+.secondanother p:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow */
+    border-color: #ff5722; /* Change border color */
+    background-color: #f9f9f9; /* Change background color */
+}
+
+/* Add a keyframe animation for continuous movement */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the paragraph */
+.secondanother p {
+    width: 1555px;
+    border-width: 5px;
+    margin-left: -470px;
+    margin-right: 188px;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+    background-size: 300% 300%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+    animation: gradientBG 5s ease infinite, float 3s ease-in-out infinite;
+}
+
+/* Gradient background animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+.secondanother p:hover {
+    border-width: 6px;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: none; /* Stop animations on hover */
+    background: linear-gradient(45deg, #ff6f61, #ffcc00, #ff6f61, #ffcc00);
+    border-color: #ff6f61;
+}
+
+/* Text color animation */
+@keyframes textColor {
+    0% {
+        color: #fff;
+    }
+    50% {
+        color: #ff6f61;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+.secondanother p:hover {
+    animation: textColor 1.5s infinite;
+}
+
+/* Add a glowing border effect */
+@keyframes glow {
+    0% {
+        border-color: #ff6f61;
+        box-shadow: 0 0 10px #ff6f61;
+    }
+    50% {
+        border-color: #ffcc00;
+        box-shadow: 0 0 20px #ffcc00;
+    }
+    100% {
+        border-color: #ff6f61;
+        box-shadow: 0 0 10px #ff6f61;
+    }
+}
+
+.secondanother p:hover {
+    animation: glow 2s infinite;
 }
