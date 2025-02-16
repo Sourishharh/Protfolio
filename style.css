@@ -90,29 +90,16 @@ li a:hover{
 }
 
 .fromright {
-        padding-right: 2.5px;
+        padding-right: 4.5px;
 }
 
-/* This code use without any effect on image 
-/* .fromright img {
-    width: 30vw; /* Adjust as needed */
-    /* height: 30vw;       Must be equal to width for a circle */
-    /* border-radius: 100%; */
-    /* object-fit: cover;  */
-    /* display: block; */
-    /* margin: 100px;  */
-    
-    /* padding: 99px ; */
-    /* position: relative; */
-    /* background-color: rgb(0, 0, 33); */
-  /* } */
 
   .fromright img {
     position: relative;
     top: 60px;
     width: 30vw; /* Adjust as needed */
     height: 30vw;
-    margin-top: 5px; /* Must be equal to width for a perfect circle */
+    margin-top: 5px;
     border-radius: 50%; /* Ensures the image remains a circle */
     object-fit: cover; /* Prevents distortion */
     padding: 10px; /* Reduce padding to keep the circle tight */
@@ -168,16 +155,247 @@ li a:hover{
     }
 }
 
-/* .newspan img{  this is for social media icon
+.newspan {  
+    position: absolute;
+    margin-top: 460px;
+    margin-left: -800px;
+    margin-bottom: 8rem;
+    width: 50px; 
+    height: 50px;
 
-    height: 80px;
-    width: 70px;
-    margin-top: 450px;
-    margin-right: 400px;
-    padding: 10px;
-    border-radius: 40%;
-     
-} */
+    background-color: #3498db; /* Blue background */
+    border: 2px solid rgb(15, 13, 13); /* White circular border */
+    border-radius: 50%; /* Makes it a circle */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Default icon style */
+.newspan i {
+    font-size: 24px;
+    color: rgb(27, 7, 95); /* Icon color */
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 Hover Effect */
+.newspan:hover {
+    background-color: rgb(37, 32, 88); /* Background turns white */
+    border-color: #3498db; /* Border turns blue */
+}
+
+.newspan:hover i {
+    color: #3498db; /* Icon turns blue */
+}
+
+.gb {  
+    position: absolute;
+    margin-top: 460px;
+    margin-left: -785px;
+    margin-bottom: 8rem;
+    width: 50px; 
+    height: 50px;
+
+    background-color: #3498db; /* Blue background */
+    border: 2px solid rgb(15, 13, 13); /* White circular border */
+    border-radius: 50%; /* Makes it a circle */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Default icon style */
+.gb i {
+    font-size: 24px;
+    color: rgb(27, 7, 95); /* Icon color */
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 Hover Effect */
+.gb:hover {
+    background-color: rgb(37, 32, 88); /* Background turns white */
+    border-color: #3498db; /* Border turns blue */
+}
+
+.gb:hover i {
+    color: #3498db; /* Icon turns blue */
+}
+
+
+.fb {  
+    position: absolute;
+    margin-top: 460px;
+    margin-left: -769px;
+    margin-bottom: 8rem;
+    width: 50px; 
+    height: 50px;
+
+    background-color: #3498db; /* Blue background */
+    border: 2px solid rgb(15, 13, 13); /* White circular border */
+    border-radius: 50%; /* Makes it a circle */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Default icon style */
+.fb i {
+    font-size: 24px;
+    color: rgb(27, 7, 95); /* Icon color */
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 Hover Effect */
+.fb:hover {
+    background-color: rgb(37, 32, 88); /* Background turns white */
+    border-color: #3498db; /* Border turns blue */
+}
+
+.fb:hover i {
+    color: #3498db; /* Icon turns blue */
+}
+
+
+.insta {  
+    position: absolute;
+    margin-top: 464px;
+    margin-left: -752px;
+    margin-bottom: 8rem;
+    width: 50px; 
+    height: 50px;
+
+    background-color: #3498db; /* Blue background */
+    border: 2px solid rgb(15, 13, 13); /* Dark border */
+    border-radius: 50%; /* Makes it a circle */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Default icon style */
+.insta i {
+    font-size: 24px;
+    color: rgb(27, 7, 95); /* Icon color */
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 Hover Effect */
+.insta:hover {
+    background-color: rgb(37, 32, 88); /* Background turns darker */
+    border-color: #3498db; /* Border turns blue */
+}
+
+.insta:hover i {
+    color: #3498db; /* Icon turns blue */
+}
+
+
+
+
+.twit {  
+    position: absolute;
+    margin-top: 464px;
+    margin-left: -730px;
+    margin-bottom: 8rem;
+    width: 50px; 
+    height: 50px;
+
+    background-color: #3498db; /* Blue background */
+    border: 2px solid rgb(15, 13, 13); /* White circular border */
+    border-radius: 50%; /* Makes it a circle */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Default icon style */
+.twit i {
+    font-size: 24px;
+    color: rgb(27, 7, 95); /* Icon color */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.twit:hover {
+    background-color:  rgb(37, 32, 88); /* Background turns white */
+    border-color: #3498db; /* Border turns blue */
+}
+
+.twit:hover i {
+    color: #3498db; /* Icon turns blue */
+}
+
+
+.butt {
+    position: absolute;
+    margin-top: 580px;
+    margin-left: -1050px;
+    margin-bottom: 8rem;
+    padding: 12px 24px; /* Adjusted padding for better shape */
+    font-size: 16px;
+    font-weight: bold;
+    color: #81b5ff; /* Text color */
+    background-color: transparent;
+    border: 2px solid #81b5ff; 
+    border-radius: 50px; 
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between text and icon */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none; /* Removes underline */
+}
+
+/* 🔥 Hover Effect (Big-Small Animation + Glow) */
+.butt:hover {
+    background-color: rgb(37, 32, 88); /* Background turns darker */
+    border-color: #3498db; /* Border turns blue */
+    color: #3498db; /* Text turns blue */
+    transform: scale(1.1); /* Button enlarges */
+    animation: shrink-grow 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Glowing Effect */
+.butt::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(129, 181, 255, 0.3) 10%, transparent 80%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.butt:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Big-Small Keyframe Animation */
+@keyframes shrink-grow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); } /* Expands slightly */
+    100% { transform: scale(1.1); } /* Returns to 1.1 */
+}
+
+
+
 
 
   
