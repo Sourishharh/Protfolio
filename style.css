@@ -76,7 +76,7 @@ li a:hover{
     }
     100% {
         color: cyan;
-        text-shadow: 0 0 9px cyan, 0 0 20px lightblue;
+        text-shadow: 0 0 9px cyan, 0 0 11px lightblue;
     }
 }
 
@@ -168,6 +168,16 @@ li a:hover{
     }
 }
 
+/* .newspan img{  this is for social media icon
+
+    height: 80px;
+    width: 70px;
+    margin-top: 450px;
+    margin-right: 400px;
+    padding: 10px;
+    border-radius: 40%;
+     
+} */
 
 
   
@@ -319,4 +329,260 @@ main hr{
 
 .secondanother p:hover {
     animation: glow 2s infinite;
+}
+
+hr{
+    background-color: white;
+    border: 0;
+    height: 200px;
+}
+
+#Skillsh1{
+    
+    font-size: 2.45rem;
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+#tecskill{
+    
+    margin-left: 340px;
+    margin-top: 80px;
+    /* padding-bottom: 50px; */
+}
+
+.technical-bars{
+
+    margin-left: 330px;
+    margin-top: 50px ;
+}
+
+.bar{
+
+    font-size: 20px;
+    margin: 30px;
+}
+
+.progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 500px;
+    height: 5px;
+    background-color: black;
+    overflow: hidden; /* Ensures smooth animation */
+}
+
+/* Target span inside progress-line with .html class */
+.progress-line.html span {
+    position: absolute;
+    height: 100%;
+    width: 90%; /* The final width after animation */
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line.html span {
+    position: absolute;
+    height: 100%;
+    width: 95%; /* The final width after animation */
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+.progress-line.css span {
+    position: absolute;
+    height: 100%;
+    width: 90%; 
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line.javascript span {
+    position: absolute;
+    height: 100%;
+    width: 85%; /* The final width after animation */
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line.react span {
+    position: absolute;
+    height: 100%;
+    width: 80%; /* The final width after animation */
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line.nodejs span {
+    position: absolute;
+    height: 100%;
+    width: 50%; /* The final width after animation */
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+.progress-line.java span {
+    position: absolute;
+    height: 100%;
+    width: 75%; /* The final width after animation */
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+.progress-line.python span {
+    position: absolute;
+    height: 100%;
+    width: 80%; /* The final width after animation */
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+.progress-line.database span {
+    position: absolute;
+    height: 100%;
+    width: 70%; /* The final width after animation */
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+.progress-line.c span {
+    position: absolute;
+    height: 100%;
+    width: 75%; 
+    background-color: #5cb1d6;
+    border-radius: 10px;
+    transform: scaleX(0); /* Start from 0 */
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Keyframes for transform-based animation */
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
 }
