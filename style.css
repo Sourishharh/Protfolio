@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 body{
@@ -338,7 +339,7 @@ li a:hover{
 }
 
 
-.butt {
+.butt{
     position: absolute;
     margin-top: 580px;
     margin-left: -1050px;
@@ -352,15 +353,11 @@ li a:hover{
     border-radius: 50px; 
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between text and icon */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none; /* Removes underline */
 }
 
-/* 🔥 Hover Effect (Big-Small Animation + Glow) */
+
 .butt:hover {
     background-color: rgb(37, 32, 88); /* Background turns darker */
     border-color: #3498db; /* Border turns blue */
@@ -455,100 +452,73 @@ main hr{
     }
 }
 
-/* Apply the animation to the paragraph */
-.secondanother p {
-    width: 1555px;
-    border-width: 5px;
-    margin-left: -470px;
-    margin-right: 188px;
-    font-size: 1.3rem;
-    line-height: 1.8;
-    border-width: 2px;
-    border-style: solid;
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
-    background-size: 300% 300%;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+
+
+.img img {
+
+    margin-top: 130px;
+    margin-left: -490px;
+    width: 480px;
+    height: auto; /* Image height adjusts to maintain aspect ratio */
+    object-fit: contain;
+    border: 10px solid rgb(76, 127, 209);
+    border-radius: 10%;
+}
+
+/* .content{
+
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+} */
+  p{
+    display: inline;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 100px;
+    font-size: 17.5px;
+    
+}
+
+.another a{
+    
+    text-decoration: none;
+}
+.rm{
+    display: flex;
+    margin-top: -79px;
+    margin-left: 120px;
+    
+    padding: 15px 20px;
+    background-color: rgb(6, 6, 80);
+    border: 3px solid #0c86a1;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
     transition: all 0.5s ease-in-out;
-    animation: gradientBG 5s ease infinite, float 3s ease-in-out infinite;
+}
+.rm:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: rgba(144, 159, 235, 0.3); 
 }
 
-/* Gradient background animation */
-@keyframes gradientBG {
+@keyframes slideIn {
     0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
+        transform: translateX(-100%);
+        opacity: 0;
     }
     100% {
-        background-position: 0% 50%;
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
-/* Floating effect */
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+/* Apply the animation to the button on page load */
+.rm {
+    animation: slideIn 0.8s ease-out;
 }
-
-/* Hover effect */
-.secondanother p:hover {
-    border-width: 6px;
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    animation: none; /* Stop animations on hover */
-    background: linear-gradient(45deg, #ff6f61, #ffcc00, #ff6f61, #ffcc00);
-    border-color: #ff6f61;
-}
-
-/* Text color animation */
-@keyframes textColor {
-    0% {
-        color: #fff;
-    }
-    50% {
-        color: #ff6f61;
-    }
-    100% {
-        color: #fff;
-    }
-}
-
-.secondanother p:hover {
-    animation: textColor 1.5s infinite;
-}
-
-/* Add a glowing border effect */
-@keyframes glow {
-    0% {
-        border-color: #ff6f61;
-        box-shadow: 0 0 10px #ff6f61;
-    }
-    50% {
-        border-color: #ffcc00;
-        box-shadow: 0 0 20px #ffcc00;
-    }
-    100% {
-        border-color: #ff6f61;
-        box-shadow: 0 0 10px #ff6f61;
-    }
-}
-
-.secondanother p:hover {
-    animation: glow 2s infinite;
-}
-
 hr{
     background-color: white;
     border: 0;
