@@ -529,15 +529,24 @@ hr{
     
     font-size: 2.45rem;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 300px;
 
 }
 
 #tecskill{
-    
+    display: flex;
     margin-left: 340px;
-    margin-top: 80px;
+    margin-top: 150px;
     /* padding-bottom: 50px; */
+}
+
+.technical-skill{
+    position: relative;
+    display: flex;
+    margin-left: 85rem;
+    margin-bottom: 90rem;
+    margin-top: -35px;
+    margin-bottom: 50px;
 }
 
 .technical-bars{
@@ -560,8 +569,6 @@ hr{
     background-color: black;
     overflow: hidden; /* Ensures smooth animation */
 }
-
-/* Target span inside progress-line with .html class */
 .progress-line.html span {
     position: absolute;
     height: 100%;
@@ -743,6 +750,8 @@ hr{
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
+
+
 /* Keyframes for transform-based animation */
 @keyframes animate {
     from {
@@ -760,9 +769,10 @@ hr{
     width: 75%; 
     background-color: #5cb1d6;
     border-radius: 10px;
-    transform: scaleX(0); /* Start from 0 */
+    transform: scaleX(0); 
     transform-origin: left;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    
 }
 
 /* Keyframes for transform-based animation */
@@ -774,3 +784,15 @@ hr{
         transform: scaleX(1);
     }
 }
+
+@keyframes showtext {
+   100%{
+     opacity: 1;
+   }
+}
+
+.skills-container {
+   
+    height: 80px;
+}
+
