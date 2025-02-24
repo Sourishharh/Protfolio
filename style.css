@@ -546,7 +546,7 @@ hr{
     margin-left: 85rem;
     margin-bottom: 90rem;
     margin-top: -35px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .technical-bars{
@@ -567,7 +567,7 @@ hr{
     width: 500px;
     height: 5px;
     background-color: black;
-    overflow: hidden; /* Ensures smooth animation */
+    overflow: hidden; 
 }
 .progress-line.html span {
     position: absolute;
@@ -595,7 +595,7 @@ hr{
     height: 100%;
     width: 95%; /* The final width after animation */
     background-color: #5cb1d6;
-    border-radius: 10px;
+    border-radius: 100px;
     transform: scaleX(0); /* Start from 0 */
     transform-origin: left;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
@@ -684,7 +684,6 @@ hr{
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-/* Keyframes for transform-based animation */
 @keyframes animate {
     from {
         transform: scaleX(0);
@@ -706,7 +705,7 @@ hr{
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-/* Keyframes for transform-based animation */
+
 @keyframes animate {
     from {
         transform: scaleX(0);
@@ -728,7 +727,6 @@ hr{
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-/* Keyframes for transform-based animation */
 @keyframes animate {
     from {
         transform: scaleX(0);
@@ -750,9 +748,6 @@ hr{
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-
-
-/* Keyframes for transform-based animation */
 @keyframes animate {
     from {
         transform: scaleX(0);
@@ -775,7 +770,6 @@ hr{
     
 }
 
-/* Keyframes for transform-based animation */
 @keyframes animate {
     from {
         transform: scaleX(0);
@@ -795,4 +789,84 @@ hr{
    
     height: 80px;
 }
+
+
+.radial-bars {
+    width: 600px; /* Adjust width */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1180px;  
+    margin-top: -700px;
+}
+
+.radial-bars .first, 
+.radial-bars .second {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Space between circles */
+    margin-bottom: 30px; /* Adjust vertical spacing */
+}
+
+.circle-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    height: 180px;
+}
+
+/* Background Circle */
+.path1 {
+    stroke: rgba(255, 255, 255, 0.2);
+    fill: none;
+    stroke-width: 15;
+}
+
+/* Progress Circle Animation */
+.progress-bar {
+    stroke: cyan;
+    fill: none;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke-dasharray: 754;  /* Circumference = 2 * π * r */
+    stroke-dashoffset: 754; /* Start from 0 progress */
+    animation: progress-animation 2s ease-out forwards;
+}
+
+/* Keyframe Animation for Progress */
+@keyframes progress-animation {
+    from {
+        stroke-dashoffset: 754;
+    }
+    to {
+        stroke-dashoffset: var(--progress-value);
+    }
+}
+
+/* Percentage Positioning */
+.percentages {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+   
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Text Below */
+.text {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
 
