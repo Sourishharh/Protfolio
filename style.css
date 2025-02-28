@@ -15,7 +15,7 @@ nav{
    justify-content: space-around;
    align-items: center;
    height: 55px;
-   /* background-color: rgb(18, 18, 62); */
+   background-color: rgb(18, 18, 62);
 }
 ul{
     display: flex;
@@ -941,9 +941,37 @@ main hr{
     margin-left: 50px;
     border: 5px solid rgb(37, 119, 166);
     background-color:rgb(11, 11, 49);
-    /* border-radius: 500px;  */
+    border-radius: 500px; 
 }
+.Box-layer2 img{
+    height: 100px;
+    width: 100px;
+    margin-left: 190px ;
+    margin-top: 20px;
+}
+.Box-layer2 h4{
+   margin-left: 150px;
+   margin-top: 30px;
+   font-size: 25px;
+}
+.Box-layer2 hr{
+    height: 3px;
+    margin-top: 30px;
+    background-color: rgb(15, 78, 115);
+}
+.Box-layer2 p{
 
+    margin-top: -10px;
+    margin-left: 80px;
+}
+.Box-layer2 button{
+    margin-top: 110px;
+    margin-left: 190px;
+    height: 50px;
+    width: 120px;
+    border: 3px solid #0c86a1;
+    border-radius: 50px; 
+}
 .Box-layer3{
     
     height: 500px;
