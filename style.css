@@ -898,6 +898,8 @@ main hr{
     border: 5px solid rgb(37, 119, 166);
     background-color:rgb(11, 11, 49);
     border-radius: 500px; 
+    transition-property: all;
+    transition-duration: 2s;
 }
 
 .Box-layer1 img{
@@ -924,7 +926,11 @@ main hr{
     margin-left: 70px;
     margin-top: -5px;
 }
+.Box-layer1:hover{
 
+    background-color: #3b73c7;
+    transform: translateY(-55px);
+}
 .Box-layer1 button{
 
     margin-top: 130px;
@@ -942,6 +948,8 @@ main hr{
     border: 5px solid rgb(37, 119, 166);
     background-color:rgb(11, 11, 49);
     border-radius: 500px; 
+    transition-property: all;
+    transition-duration: 2s;
 }
 .Box-layer2 img{
     height: 100px;
@@ -964,13 +972,49 @@ main hr{
     margin-top: -10px;
     margin-left: 80px;
 }
+.Box-layer2:hover{
+
+    background-color: #3b73c7;
+    transform: translateY(-55px);
+}
 .Box-layer2 button{
-    margin-top: 110px;
+    margin-top: 90px;
     margin-left: 190px;
     height: 50px;
     width: 120px;
     border: 3px solid #0c86a1;
     border-radius: 50px; 
+}
+ #icons{
+    display: block;
+    margin-top: 40px;
+    margin-left: 225px;
+    height: 35px;
+    width: 35px;
+   
+}
+#icons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -9px;
+    border: 2px solid rgb(18, 181, 178);
+    background-color: rgb(18, 181, 178);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    font-size: 43px; 
+}
+
+#icons i:hover{
+    background-color: #2ce092;
+}
+#icons i { 
+    background-color: #2ce092;
+    color: rgb(9, 71, 102); /* Ensures icon remains visible */
+}
+.Box-layer2 a{
+    text-decoration: none;
 }
 .Box-layer3{
     
