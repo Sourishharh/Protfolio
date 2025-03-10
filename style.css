@@ -81,10 +81,16 @@ li a:hover{
     }
 }
 
-
+.typed-cursor {
+    font-size: 50px;
+    color: aqua;
+    
+}
+.multiple-Text{
+    color: aqua;
+}
 
 .fromleft{
-    /* background-color: red; */
   width: 40%;
   font-size: 2.8rem;
   margin: 200px 0px 0px 120px;
@@ -244,7 +250,6 @@ li a:hover{
     align-items: center;
     transition: all 0.3s ease-in-out;
 }
-
 
 
 /* Default icon style */
@@ -495,13 +500,13 @@ main hr{
     border: 3px solid #0c86a1;
     color: white;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 30px;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
 .rm:hover {
     transform: scale(1.1); /* Slightly enlarge on hover */
-    background-color: rgba(144, 159, 235, 0.3); 
+    background-color: rgb(14, 159, 159); 
 }
 
 @keyframes slideIn {
