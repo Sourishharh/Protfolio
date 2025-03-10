@@ -423,7 +423,7 @@ main hr{
     margin-left: 170px;
     margin-top: 380px ;
     text-decoration: underline; /* Underline the text */
-    text-underline-offset: 8px; /* Moves underline lower */
+    text-underline-offset: 12px; /* Moves underline lower */
     text-decoration-thickness: 3px; 
 }
 
@@ -880,7 +880,7 @@ main hr{
     margin-left: 850px;
     font-size: 35px;
     text-decoration: underline; 
-    text-underline-offset: 8px; 
+    text-underline-offset: 12px; 
     text-decoration-thickness: 3px; 
 }
 
