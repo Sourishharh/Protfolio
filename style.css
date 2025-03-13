@@ -127,7 +127,7 @@ li a:hover{
         opacity: 0;
     }
     100% {
-        transform: translateX(0); /* Moves to its original position */
+        transform: translateX(0); 
         opacity: 1;
     }
 }
@@ -311,7 +311,6 @@ li a:hover{
 
 
 
-
 .twit {  
     position: absolute;
     margin-top: 464px;
@@ -366,7 +365,6 @@ li a:hover{
     transition: all 0.3s ease-in-out;
 }
 
-
 .butt:hover {
     background-color: rgb(37, 32, 88); /* Background turns darker */
     border-color: #3498db; /* Border turns blue */
@@ -401,7 +399,6 @@ li a:hover{
 }
 
 
-
 main hr{
     border:0;
     background: rgb(67, 67, 212);
@@ -413,10 +410,6 @@ main hr{
     margin-left: 670px;
     margin-top: -50px;
 }
-
-/* .Secondsection div h1{
-     font-size: 200rem;
-} */
 
 .another h1{
     font-size: 2.6rem;
