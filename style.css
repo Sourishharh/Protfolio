@@ -1384,7 +1384,8 @@ a {
     color: white; 
     font-size: 16px; 
     margin-left: 300px;
-    padding: 12px 24px; /* Add padding for a better look */
+    margin-bottom: 90px;
+    padding: 12px 2px; /* Add padding for a better look */
     border: none; /* Remove default border */
     border-radius: 6px; /* Rounded corners */
     cursor: value; /* Show hand cursor on hover */
@@ -1397,15 +1398,50 @@ a {
 }
 
 .copyr{
-    display: flex;
-    text-align: center;
-    margin-left: 600px;
-    background-color: #262626;
+    background-color: #18043d;
     width: 100%;  
-    height: 100%;
+    min-height: 0px;
+  padding-bottom: 10px;
 }
-
-.copyr i{
-
+.copyr p{
+    margin-left: 700px;
+    margin-top: 40px;
+}
+.copyr #hh{
     color: red;
 }
+
+.copyr #arrow{
+
+    margin-left: 1800px;
+    margin-top: 30px;
+    background-color: rgb(92, 246, 243);
+    font-size: 20px;
+    width: 30px;  
+    height: 30px;
+    text-align: center;
+    border-radius: 10%;
+    padding: 10px;
+    padding-top: 15px;
+} 
+
+#arrow  {
+    margin-top: 100px;
+    color: rgb(19, 5, 86);
+}
+
+.copyr #arrow {
+    transition: all 0.3s ease-in-out;
+}
+
+.copyr #arrow:hover {
+    background-color: #055263;
+    transform:  scale(1.2);
+    box-shadow: 0px 5px 15px rgba(60, 108, 176, 0.2);
+}
+
+.copyr #arrow:active {
+    transform: rotate(0deg) scale(1);
+    background-color: rgb(200, 50, 50);
+}
+
