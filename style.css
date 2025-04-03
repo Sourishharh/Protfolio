@@ -1105,25 +1105,34 @@ a {
     background-color:rgb(11, 11, 49);
     border-radius: 50%;
 }
+
+.Box-layer4 img{
+      
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 180px ;
+    border-radius: 60%;
+}
 .Box-layer4 hr{
 
     height: 3px;
-    margin-top: 60px;
+    margin-top: 30px;
     background-color: rgb(15, 78, 115);
 }
 .Box-layer4 h4{
 
     margin-left: 170px;
-    margin-top: 70px;
+    margin-top: 30px;
     font-size: 27px;
 }
 .Box-layer4 p{
 
-    margin-top: 10px;
+    margin-top: -10px;
     margin-left: 80px;
 }
 .Box-layer4 button{
-    margin-top: 150px;
+    margin-top: 90px;
     margin-left: 190px;
     height: 50px;
     width: 120px;
