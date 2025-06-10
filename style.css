@@ -1410,11 +1410,11 @@ a {
     background-color: #18043d;
     width: 100%;  
     min-height: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 .copyr p{
     margin-left: 700px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .copyr #hh{
     color: red;
